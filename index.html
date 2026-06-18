@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ad Asset Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+  <header class="dash-header">
+    <div class="dash-header__inner">
+      <h1 class="dash-header__title">Ad Asset Dashboard</h1>
+      <div class="dash-header__meta">
+        <span class="dash-header__date" id="last-updated"></span>
+        <button class="btn btn--outline" id="edit-toggle">Edit Mode</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="dash-main">
+
+    <!-- SUMMARY BAR -->
+    <section class="summary-bar" aria-label="Portfolio summary">
+      <div class="summary-stat">
+        <span class="summary-stat__value" id="total-assets">5</span>
+        <span class="summary-stat__label">Total Assets</span>
+      </div>
+      <div class="summary-stat">
+        <span class="summary-stat__value" id="total-sessions">—</span>
+        <span class="summary-stat__label">Total Sessions (30d)</span>
+      </div>
+      <div class="summary-stat">
+        <span class="summary-stat__value" id="total-revenue">$0</span>
+        <span class="summary-stat__label">Total Revenue (30d)</span>
+      </div>
+      <div class="summary-stat">
+        <span class="summary-stat__value">Phase 1</span>
+        <span class="summary-stat__label">Ad Network — Grow.me</span>
+      </div>
+      <div class="summary-stat">
+        <span class="summary-stat__value" id="journey-closest">—</span>
+        <span class="summary-stat__label">Closest to Journey</span>
+      </div>
+    </section>
+
+    <!-- SEARCH + FILTER TOOLBAR -->
+    <div class="filter-bar" role="search" aria-label="Filter assets">
+      <div class="filter-bar__search">
+        <label class="sr-only" for="search-input">Search assets</label>
+        <input class="filter-bar__input" type="search" id="search-input" placeholder="Search by name, domain, or keyword…" autocomplete="off">
+      </div>
+      <div class="filter-bar__filters">
+        <select class="filter-bar__select" id="filter-niche" aria-label="Filter by niche">
+          <option value="">All niches</option>
+          <option value="dev">Dev Tools</option>
+          <option value="health">Health &amp; Fitness</option>
+          <option value="finance">Finance</option>
+        </select>
+        <select class="filter-bar__select" id="filter-phase" aria-label="Filter by ad phase">
+          <option value="">All phases</option>
+          <option value="1">Phase 1 &mdash; Grow.me</option>
+          <option value="2">Phase 2 &mdash; Journey</option>
+          <option value="3">Phase 3 &mdash; Monumetric</option>
+        </select>
+        <select class="filter-bar__select" id="filter-progress" aria-label="Filter by Journey progress">
+          <option value="">All progress</option>
+          <option value="none">Not started (0)</option>
+          <option value="low">Under 500</option>
+          <option value="mid">500 &ndash; 999</option>
+          <option value="ready">Ready (1,000+)</option>
+        </select>
+        <button class="btn btn--outline" id="clear-filters" type="button">Clear</button>
+      </div>
+      <span class="filter-bar__count" id="results-count">5 assets</span>
+    </div>
+
+    <!-- ASSET GRID -->
+    <section class="asset-grid" aria-label="Asset cards" id="asset-grid">
+      <!-- Populated by JS -->
+    </section>
+
+  </main>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>
