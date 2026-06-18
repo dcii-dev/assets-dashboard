@@ -2,6 +2,7 @@
   "use strict";
 
   const STORAGE_KEY = "ad-asset-dashboard";
+  let currentData = {};
 
   /** Static asset definitions — update repo/domain info here if it changes. */
   const ASSETS = [
@@ -76,6 +77,15 @@
   }
 
   /**
+   * Returns true when a value looks like a GA4 numeric property id.
+   * @param {string} value
+   * @return {boolean}
+   */
+  function isValidGaPropertyId(value) {
+    return /^\d+$/.test((value || "").trim());
+  }
+
+  /**
    * Saves current stats to localStorage.
    * @param {Object} data
    */
@@ -87,9 +97,42 @@
     }
   }
 
+  /**
+   * Loads automated metrics from generated JSON and maps them to card fields.
+   * @return {Promise<Object>}
+   */
+  async function loadAutomatedData() {
+    try {
+      const res = await fetch("./data/stats.json", { cache: "no-store" });
+      if (!res.ok) return { mapped: {}, generatedAt: "" };
+      const payload = await res.json();
+      const assets = payload?.assets || {};
+      const mapped = {};
+      Object.entries(assets).forEach(([id, row]) => {
+        mapped[id] = {
+          sessions:
+            row?.sessions != null ? String(Math.round(Number(row.sessions))) : "—",
+          clicks:
+            row?.clicks != null ? String(Math.round(Number(row.clicks))) : "—",
+          impressions:
+            row?.impressions != null
+              ? String(Math.round(Number(row.impressions)))
+              : "—",
+          gaId: row?.gaPropertyId ? String(row.gaPropertyId) : "",
+        };
+      });
+      return {
+        mapped,
+        generatedAt: payload?.generatedAt || "",
+      };
+    } catch {
+      return { mapped: {}, generatedAt: "" };
+    }
+  }
+
   /** Reads all editable fields from the DOM and saves to localStorage. */
   function persistAll() {
-    const data = loadData();
+    const data = { ...currentData };
     document.querySelectorAll("[data-asset-id]").forEach((card) => {
       const id = card.dataset.assetId;
       if (!data[id]) data[id] = {};
@@ -97,6 +140,7 @@
         data[id][el.dataset.field] = el.textContent.trim();
       });
     });
+    currentData = data;
     saveData(data);
     updateSummary(data);
   }
@@ -174,16 +218,16 @@
         parseInt(String(saved.sessions || "0").replace(/\D/g, ""), 10) || 0;
       const revenue = saved.revenue || "—";
       const rpm = saved.rpm || "—";
-      const gaId = saved.gaId || asset.gaId || "";
+      const savedGaId = String(saved.gaId || "").trim();
+      const gaId = isValidGaPropertyId(savedGaId) ? savedGaId : asset.gaId;
       const clicks = saved.clicks || "—";
       const impressions = saved.impressions || "—";
 
       const liveUrl = `https://${asset.domain}`;
       const gscUrl = `https://search.google.com/search-console?resource_id=sc-domain:${asset.domain}`;
-      const gaUrl =
-        saved.gaId || asset.gaId
-          ? `https://analytics.google.com/analytics/web/#/p${saved.gaId || asset.gaId}/reports/reportinghub`
-          : "https://analytics.google.com";
+      const gaUrl = gaId
+        ? `https://analytics.google.com/analytics/web/#/p${gaId}/reports/reportinghub`
+        : "https://analytics.google.com";
 
       const pct = Math.min(100, Math.round((sessions / 1000) * 100));
       const fillClass =
@@ -306,10 +350,12 @@
   }
 
   /** Sets the header date stamp to today. */
-  function setDate() {
+  function setDate(generatedAt) {
     const el = document.getElementById("last-updated");
     if (el) {
-      el.textContent = `Updated ${new Date().toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })}`;
+      const source = generatedAt ? new Date(generatedAt) : new Date();
+      const safeDate = Number.isNaN(source.getTime()) ? new Date() : source;
+      el.textContent = `Updated ${safeDate.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })}`;
     }
   }
 
@@ -325,7 +371,7 @@
     const phase = document.getElementById("filter-phase")?.value ?? "";
     const progress = document.getElementById("filter-progress")?.value ?? "";
 
-    const data = loadData();
+    const data = currentData;
     let visible = 0;
 
     document.querySelectorAll("[data-asset-id]").forEach((card) => {
@@ -414,9 +460,13 @@
     }
   }
 
-  function initializeApp() {
-    setDate();
-    const data = loadData();
+  async function initializeApp() {
+    const automatedPayload = await loadAutomatedData();
+    setDate(automatedPayload.generatedAt);
+    const localData = loadData();
+    const automatedData = automatedPayload.mapped;
+    const data = { ...localData, ...automatedData };
+    currentData = data;
     renderCards(data);
     updateSummary(data);
 
@@ -458,7 +508,7 @@
           disableEditMode();
           persistAll();
           // Re-render to reflect any session count changes
-          const updatedData = loadData();
+          const updatedData = currentData;
           document.querySelectorAll("[data-asset-id]").forEach((card) => {
             refreshCard(card);
           });
@@ -476,7 +526,7 @@
           const card = e.target.closest("[data-asset-id]");
           if (card && e.target.dataset.field === "sessions") {
             refreshCard(card);
-            updateSummary(loadData());
+            updateSummary(currentData);
           }
         }
       },

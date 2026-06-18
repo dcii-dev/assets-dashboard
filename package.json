@@ -1,0 +1,12 @@
+{
+  "name": "assets-dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "update-metrics": "node scripts/fetch-metrics.mjs"
+  },
+  "dependencies": {
+    "google-auth-library": "^9.15.1"
+  }
+}
