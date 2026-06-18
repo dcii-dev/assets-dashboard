@@ -111,7 +111,9 @@
       Object.entries(assets).forEach(([id, row]) => {
         mapped[id] = {
           sessions:
-            row?.sessions != null ? String(Math.round(Number(row.sessions))) : "—",
+            row?.sessions != null
+              ? String(Math.round(Number(row.sessions)))
+              : "—",
           clicks:
             row?.clicks != null ? String(Math.round(Number(row.clicks))) : "—",
           impressions:

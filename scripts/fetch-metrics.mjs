@@ -35,7 +35,9 @@ function parseServiceAccountKey() {
   }
   const parsed = JSON.parse(raw);
   if (!parsed.client_email || !parsed.private_key) {
-    throw new Error("Service account JSON is missing client_email/private_key.");
+    throw new Error(
+      "Service account JSON is missing client_email/private_key.",
+    );
   }
   return parsed;
 }
@@ -80,8 +82,7 @@ async function fetchGaSessions(accessToken, gaPropertyId, startDate, endDate) {
 
 async function fetchGscMetrics(accessToken, domain, startDate, endDate) {
   const siteUrl = `sc-domain:${domain}`;
-  const endpoint =
-    `https://searchconsole.googleapis.com/webmasters/v3/sites/${encodeURIComponent(siteUrl)}/searchAnalytics/query`;
+  const endpoint = `https://searchconsole.googleapis.com/webmasters/v3/sites/${encodeURIComponent(siteUrl)}/searchAnalytics/query`;
 
   const res = await fetch(endpoint, {
     method: "POST",
