@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-06-19T12:54:18.813Z",
+  "generatedAt": "2026-06-20T11:25:45.359Z",
   "range": {
-    "startDate": "2026-05-20",
-    "endDate": "2026-06-18"
+    "startDate": "2026-05-21",
+    "endDate": "2026-06-19"
   },
   "assets": {
     "asset-1": {
       "domain": "clampgen.com",
       "gaPropertyId": "540522281",
-      "sessions": 497,
+      "sessions": 529,
       "clicks": 0,
-      "impressions": 55,
+      "impressions": 70,
       "status": "ok",
       "error": ""
     },
@@ -19,14 +19,14 @@
       "gaPropertyId": "540671739",
       "sessions": 75,
       "clicks": 0,
-      "impressions": 29,
+      "impressions": 33,
       "status": "ok",
       "error": ""
     },
     "asset-3": {
       "domain": "calmacrocal.com",
       "gaPropertyId": "540909051",
-      "sessions": 79,
+      "sessions": 82,
       "clicks": 0,
       "impressions": 4,
       "status": "ok",
@@ -37,14 +37,14 @@
       "gaPropertyId": "540671739",
       "sessions": 75,
       "clicks": 0,
-      "impressions": 32,
+      "impressions": 35,
       "status": "ok",
       "error": ""
     },
     "asset-5": {
       "domain": "srcsetbuilder.com",
       "gaPropertyId": "542208158",
-      "sessions": 26,
+      "sessions": 41,
       "clicks": 0,
       "impressions": 0,
       "status": "ok",
