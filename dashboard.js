@@ -61,6 +61,17 @@
       phase: 1,
       desc: "Generate accurate srcset and sizes attributes, preview candidate widths and DPR coverage, and export all resized images as a zip in one click.",
     },
+    {
+      id: "asset-6",
+      num: "Asset 06",
+      name: "CSS Layout Generator",
+      domain: "csslayoutgen.com",
+      repo: "https://github.com/dcii-dev/csslayoutgen",
+      gaId: "544297629",
+      niche: "dev",
+      phase: 1,
+      desc: "Visual CSS Grid, Subgrid, and Flexbox layout builder with templates, drag-resize controls, and production-ready CSS or HTML output.",
+    },
   ];
 
   /**

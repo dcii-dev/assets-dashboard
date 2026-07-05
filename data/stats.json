@@ -49,6 +49,15 @@
       "impressions": 0,
       "status": "ok",
       "error": ""
+    },
+    "asset-6": {
+      "domain": "csslayoutgen.com",
+      "gaPropertyId": "544297629",
+      "sessions": 0,
+      "clicks": 0,
+      "impressions": 0,
+      "status": "ok",
+      "error": ""
     }
   }
 }
