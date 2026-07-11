@@ -1,23 +1,23 @@
 {
-  "generatedAt": "2026-07-10T12:08:02.945Z",
+  "generatedAt": "2026-07-11T10:33:38.697Z",
   "range": {
-    "startDate": "2026-06-10",
-    "endDate": "2026-07-09"
+    "startDate": "2026-06-11",
+    "endDate": "2026-07-10"
   },
   "assets": {
     "asset-1": {
       "domain": "clampgen.com",
       "gaPropertyId": "540522281",
-      "sessions": 896,
+      "sessions": 894,
       "clicks": 3,
-      "impressions": 164,
+      "impressions": 163,
       "status": "ok",
       "error": ""
     },
     "asset-2": {
       "domain": "freelanceratewise.com",
       "gaPropertyId": "540671739",
-      "sessions": 74,
+      "sessions": 69,
       "clicks": 0,
       "impressions": 20,
       "status": "ok",
@@ -26,7 +26,7 @@
     "asset-3": {
       "domain": "calmacrocal.com",
       "gaPropertyId": "540909051",
-      "sessions": 93,
+      "sessions": 74,
       "clicks": 0,
       "impressions": 12,
       "status": "ok",
@@ -35,9 +35,9 @@
     "asset-4": {
       "domain": "onerepmaxx.com",
       "gaPropertyId": "540671739",
-      "sessions": 74,
+      "sessions": 69,
       "clicks": 0,
-      "impressions": 169,
+      "impressions": 174,
       "status": "ok",
       "error": ""
     },
@@ -46,7 +46,7 @@
       "gaPropertyId": "542208158",
       "sessions": 88,
       "clicks": 0,
-      "impressions": 6,
+      "impressions": 8,
       "status": "ok",
       "error": ""
     }
