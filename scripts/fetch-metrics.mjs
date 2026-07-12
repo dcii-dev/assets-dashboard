@@ -9,7 +9,7 @@ const ASSETS = [
   { id: "asset-4", domain: "onerepmaxx.com", gaPropertyId: "540671739" },
   { id: "asset-5", domain: "srcsetbuilder.com", gaPropertyId: "542208158" },
   { id: "asset-6", domain: "csslayoutgen.com", gaPropertyId: "544297629" },
-  { id: "asset-7", domain: "boxshadowgen.com", gaPropertyId: "" },
+  { id: "asset-7", domain: "boxshadowgen.com", gaPropertyId: "545267670" },
 ];
 
 const SCOPES = [
