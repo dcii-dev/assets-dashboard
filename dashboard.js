@@ -72,6 +72,17 @@
       phase: 1,
       desc: "Visual CSS Grid, Subgrid, and Flexbox layout builder with templates, drag-resize controls, and production-ready CSS or HTML output.",
     },
+    {
+      id: "asset-7",
+      num: "Asset 07",
+      name: "CSS Box Shadow Generator",
+      domain: "boxshadowgen.com",
+      repo: "https://github.com/dcii-dev/boxshadowgen",
+      gaId: "",
+      niche: "dev",
+      phase: 1,
+      desc: "Visual multi-layer CSS box-shadow builder with live preview, inset support, per-layer opacity control, presets, and production-ready CSS output.",
+    },
   ];
 
   /**

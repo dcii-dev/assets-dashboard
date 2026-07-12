@@ -8,6 +8,8 @@ const ASSETS = [
   { id: "asset-3", domain: "calmacrocal.com", gaPropertyId: "540909051" },
   { id: "asset-4", domain: "onerepmaxx.com", gaPropertyId: "540671739" },
   { id: "asset-5", domain: "srcsetbuilder.com", gaPropertyId: "542208158" },
+  { id: "asset-6", domain: "csslayoutgen.com", gaPropertyId: "544297629" },
+  { id: "asset-7", domain: "boxshadowgen.com", gaPropertyId: "" },
 ];
 
 const SCOPES = [
@@ -149,12 +151,14 @@ async function main() {
     };
 
     try {
-      row.sessions = await fetchGaSessions(
-        accessToken,
-        asset.gaPropertyId,
-        startDate,
-        endDate,
-      );
+      if (asset.gaPropertyId) {
+        row.sessions = await fetchGaSessions(
+          accessToken,
+          asset.gaPropertyId,
+          startDate,
+          endDate,
+        );
+      }
     } catch (err) {
       row.status = "error";
       row.error = `GA: ${err.message}`;

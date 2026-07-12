@@ -58,6 +58,15 @@
       "impressions": 0,
       "status": "ok",
       "error": ""
+    },
+    "asset-7": {
+      "domain": "boxshadowgen.com",
+      "gaPropertyId": "",
+      "sessions": 0,
+      "clicks": 0,
+      "impressions": 0,
+      "status": "ok",
+      "error": ""
     }
   }
 }
