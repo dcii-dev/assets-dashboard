@@ -1,32 +1,32 @@
 {
-  "generatedAt": "2026-07-12T10:41:49.883Z",
+  "generatedAt": "2026-07-13T12:16:45.373Z",
   "range": {
-    "startDate": "2026-06-12",
-    "endDate": "2026-07-11"
+    "startDate": "2026-06-13",
+    "endDate": "2026-07-12"
   },
   "assets": {
     "asset-1": {
       "domain": "clampgen.com",
       "gaPropertyId": "540522281",
-      "sessions": 888,
+      "sessions": 892,
       "clicks": 3,
-      "impressions": 176,
+      "impressions": 190,
       "status": "ok",
       "error": ""
     },
     "asset-2": {
       "domain": "freelanceratewise.com",
       "gaPropertyId": "540671739",
-      "sessions": 69,
+      "sessions": 62,
       "clicks": 0,
-      "impressions": 19,
+      "impressions": 15,
       "status": "ok",
       "error": ""
     },
     "asset-3": {
       "domain": "calmacrocal.com",
       "gaPropertyId": "540909051",
-      "sessions": 69,
+      "sessions": 68,
       "clicks": 0,
       "impressions": 11,
       "status": "ok",
@@ -35,9 +35,9 @@
     "asset-4": {
       "domain": "onerepmaxx.com",
       "gaPropertyId": "540671739",
-      "sessions": 69,
+      "sessions": 62,
       "clicks": 0,
-      "impressions": 178,
+      "impressions": 179,
       "status": "ok",
       "error": ""
     },
@@ -46,9 +46,18 @@
       "gaPropertyId": "542208158",
       "sessions": 88,
       "clicks": 0,
-      "impressions": 9,
+      "impressions": 10,
       "status": "ok",
       "error": ""
+    },
+    "asset-6": {
+      "domain": "csslayoutgen.com",
+      "gaPropertyId": "544297629",
+      "sessions": 99,
+      "clicks": 0,
+      "impressions": 0,
+      "status": "error",
+      "error": "GSC: GSC API failed for csslayoutgen.com: 403 {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"User does not have sufficient permission for site 'sc-domain:csslayoutgen.com'. See also: https://support.google.com/webmasters/answer/2451999.\",\n    \"errors\": [\n      {\n        \"message\": \"User does not have sufficient permission for site 'sc-domain:csslayoutgen.com'. See also: https://support.google.com/webmasters/answer/2451999.\",\n        \"domain\": \"global\",\n        \"reason\": \"forbidden\"\n      }\n    ]\n  }\n}\n"
     },
     "asset-7": {
       "domain": "boxshadowgen.com",
@@ -56,8 +65,8 @@
       "sessions": 0,
       "clicks": 0,
       "impressions": 0,
-      "status": "ok",
-      "error": ""
+      "status": "partial",
+      "error": "GA: GA API failed for 545267670: 403 {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"User does not have sufficient permissions for this property. To learn more about Property ID, see https://developers.google.com/analytics/devguides/reporting/data/v1/property-id.\",\n    \"status\": \"PERMISSION_DENIED\"\n  }\n}\n; GSC: GSC API failed for boxshadowgen.com: 403 {\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"User does not have sufficient permission for site 'sc-domain:boxshadowgen.com'. See also: https://support.google.com/webmasters/answer/2451999.\",\n    \"errors\": [\n      {\n        \"message\": \"User does not have sufficient permission for site 'sc-domain:boxshadowgen.com'. See also: https://support.google.com/webmasters/answer/2451999.\",\n        \"domain\": \"global\",\n        \"reason\": \"forbidden\"\n      }\n    ]\n  }\n}\n"
     }
   }
 }
