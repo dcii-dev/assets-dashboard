@@ -1,32 +1,32 @@
 {
-  "generatedAt": "2026-07-19T10:42:33.384Z",
+  "generatedAt": "2026-07-20T11:57:38.922Z",
   "range": {
-    "startDate": "2026-06-19",
-    "endDate": "2026-07-18"
+    "startDate": "2026-06-20",
+    "endDate": "2026-07-19"
   },
   "assets": {
     "asset-1": {
       "domain": "clampgen.com",
       "gaPropertyId": "540522281",
-      "sessions": 601,
-      "clicks": 3,
-      "impressions": 192,
+      "sessions": 571,
+      "clicks": 2,
+      "impressions": 186,
       "status": "ok",
       "error": ""
     },
     "asset-2": {
       "domain": "freelanceratewise.com",
       "gaPropertyId": "540671739",
-      "sessions": 51,
+      "sessions": 49,
       "clicks": 0,
-      "impressions": 7,
+      "impressions": 8,
       "status": "ok",
       "error": ""
     },
     "asset-3": {
       "domain": "calmacrocal.com",
       "gaPropertyId": "540909051",
-      "sessions": 49,
+      "sessions": 46,
       "clicks": 0,
       "impressions": 10,
       "status": "ok",
@@ -35,16 +35,16 @@
     "asset-4": {
       "domain": "onerepmaxx.com",
       "gaPropertyId": "540671739",
-      "sessions": 51,
+      "sessions": 49,
       "clicks": 1,
-      "impressions": 175,
+      "impressions": 171,
       "status": "ok",
       "error": ""
     },
     "asset-5": {
       "domain": "srcsetbuilder.com",
       "gaPropertyId": "542208158",
-      "sessions": 64,
+      "sessions": 50,
       "clicks": 0,
       "impressions": 12,
       "status": "ok",
