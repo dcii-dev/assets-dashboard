@@ -1,61 +1,70 @@
 {
-  "generatedAt": "2026-07-12T10:41:49.883Z",
+  "generatedAt": "2026-08-09T18:24:55.931Z",
   "range": {
-    "startDate": "2026-06-12",
-    "endDate": "2026-07-11"
+    "startDate": "2026-07-10",
+    "endDate": "2026-08-08"
   },
   "assets": {
     "asset-1": {
       "domain": "clampgen.com",
       "gaPropertyId": "540522281",
-      "sessions": 888,
-      "clicks": 3,
-      "impressions": 176,
+      "sessions": 488,
+      "clicks": 4,
+      "impressions": 282,
       "status": "ok",
       "error": ""
     },
     "asset-2": {
       "domain": "freelanceratewise.com",
       "gaPropertyId": "540671739",
-      "sessions": 69,
+      "sessions": 18,
       "clicks": 0,
-      "impressions": 19,
+      "impressions": 13,
       "status": "ok",
       "error": ""
     },
     "asset-3": {
       "domain": "calmacrocal.com",
       "gaPropertyId": "540909051",
-      "sessions": 69,
+      "sessions": 26,
       "clicks": 0,
-      "impressions": 11,
+      "impressions": 8,
       "status": "ok",
       "error": ""
     },
     "asset-4": {
       "domain": "onerepmaxx.com",
-      "gaPropertyId": "540671739",
-      "sessions": 69,
-      "clicks": 0,
-      "impressions": 178,
+      "gaPropertyId": "541123516",
+      "sessions": 19,
+      "clicks": 1,
+      "impressions": 96,
       "status": "ok",
       "error": ""
     },
     "asset-5": {
       "domain": "srcsetbuilder.com",
       "gaPropertyId": "542208158",
-      "sessions": 88,
+      "sessions": 12,
       "clicks": 0,
-      "impressions": 9,
+      "impressions": 10,
+      "status": "ok",
+      "error": ""
+    },
+    "asset-6": {
+      "domain": "csslayoutgen.com",
+      "gaPropertyId": "544297629",
+      "sessions": 49,
+      "clicks": 0,
+      "impressions": 65,
       "status": "ok",
       "error": ""
     },
     "asset-7": {
       "domain": "boxshadowgen.com",
       "gaPropertyId": "545267670",
-      "sessions": 0,
-      "clicks": 0,
-      "impressions": 0,
+      "sessions": 207,
+      "clicks": 1,
+      "impressions": 11,
       "status": "ok",
       "error": ""
     }

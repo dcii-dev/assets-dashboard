@@ -6,7 +6,7 @@ const ASSETS = [
   { id: "asset-1", domain: "clampgen.com", gaPropertyId: "540522281" },
   { id: "asset-2", domain: "freelanceratewise.com", gaPropertyId: "540671739" },
   { id: "asset-3", domain: "calmacrocal.com", gaPropertyId: "540909051" },
-  { id: "asset-4", domain: "onerepmaxx.com", gaPropertyId: "540671739" },
+  { id: "asset-4", domain: "onerepmaxx.com", gaPropertyId: "541123516" },
   { id: "asset-5", domain: "srcsetbuilder.com", gaPropertyId: "542208158" },
   { id: "asset-6", domain: "csslayoutgen.com", gaPropertyId: "544297629" },
   { id: "asset-7", domain: "boxshadowgen.com", gaPropertyId: "545267670" },
@@ -123,8 +123,45 @@ async function fetchGscMetrics(accessToken, domain, startDate, endDate) {
   };
 }
 
-async function writeStatsJson(payload) {
-  const target = path.join(process.cwd(), "data", "stats.json");
+async function fetchGscQueries(accessToken, domain, startDate, endDate) {
+  const siteUrl = `sc-domain:${domain}`;
+  const endpoint = `https://searchconsole.googleapis.com/webmasters/v3/sites/${encodeURIComponent(siteUrl)}/searchAnalytics/query`;
+
+  const res = await fetch(endpoint, {
+    method: "POST",
+    headers: {
+      Authorization: `Bearer ${accessToken}`,
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      startDate,
+      endDate,
+      dimensions: ["query"],
+      rowLimit: 25,
+      type: "web",
+      dataState: "final",
+    }),
+  });
+
+  if (!res.ok) {
+    const txt = await res.text();
+    throw new Error(`GSC Query API failed for ${domain}: ${res.status} ${txt}`);
+  }
+
+  const json = await res.json();
+  const rows = json?.rows || [];
+
+  return rows.map((row) => ({
+    query: row.keys[0],
+    clicks: Math.round(row.clicks || 0),
+    impressions: Math.round(row.impressions || 0),
+    ctr: Math.round((row.ctr || 0) * 1000) / 10,
+    position: Math.round((row.position || 0) * 10) / 10,
+  }));
+}
+
+async function writeJson(filename, payload) {
+  const target = path.join(process.cwd(), "data", filename);
   await fs.mkdir(path.dirname(target), { recursive: true });
   await fs.writeFile(target, `${JSON.stringify(payload, null, 2)}\n`, "utf8");
 }
@@ -183,8 +220,30 @@ async function main() {
     out.assets[asset.id] = row;
   }
 
-  await writeStatsJson(out);
+  const keywords = {
+    generatedAt: new Date().toISOString(),
+    range: { startDate, endDate },
+    assets: {},
+  };
+
+  for (const asset of ASSETS) {
+    try {
+      keywords.assets[asset.id] = await fetchGscQueries(
+        accessToken,
+        asset.domain,
+        startDate,
+        endDate,
+      );
+    } catch (err) {
+      keywords.assets[asset.id] = [];
+      console.warn(`Keywords skipped for ${asset.domain}: ${err.message}`);
+    }
+  }
+
+  await writeJson("stats.json", out);
+  await writeJson("keywords.json", keywords);
   console.log("Wrote data/stats.json");
+  console.log("Wrote data/keywords.json");
 }
 
 main().catch((err) => {

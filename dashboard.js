@@ -3,6 +3,7 @@
 
   const STORAGE_KEY = "ad-asset-dashboard";
   let currentData = {};
+  let keywordData = {};
 
   /** Static asset definitions — update repo/domain info here if it changes. */
   const ASSETS = [
@@ -45,7 +46,7 @@
       name: "One-Rep Max Calculator",
       domain: "onerepmaxx.com",
       repo: "https://github.com/dcii-dev/onerepmaxx",
-      gaId: "540671739",
+      gaId: "541123516",
       niche: "health",
       phase: 1,
       desc: "Free 1RM calculator using Brzycki, Epley, and Lombardi formulas. Includes warm-up ramp, competition attempt selector, reverse calculator, training zones, and PR history tracking.",
@@ -151,6 +152,21 @@
       };
     } catch {
       return { mapped: {}, generatedAt: "" };
+    }
+  }
+
+  /**
+   * Loads keyword data from generated JSON.
+   * @return {Promise<Object>}
+   */
+  async function loadKeywordData() {
+    try {
+      const res = await fetch("./data/keywords.json", { cache: "no-store" });
+      if (!res.ok) return {};
+      const payload = await res.json();
+      return payload?.assets || {};
+    } catch {
+      return {};
     }
   }
 
@@ -339,10 +355,61 @@
               <em class="link-btn__icon">◎</em> Analytics
             </a>
           </div>
+
+          <div class="asset-card__keywords" id="keywords-${asset.id}"></div>
         </div>
       `;
 
       grid.appendChild(card);
+    });
+  }
+
+  /**
+   * Renders keyword tables into each card.
+   * @param {Object} keywords - keyed by asset id, each an array of query objects
+   */
+  function renderKeywords(keywords) {
+    ASSETS.forEach((asset) => {
+      const container = document.getElementById(`keywords-${asset.id}`);
+      if (!container) return;
+
+      const queries = keywords[asset.id] || [];
+      if (queries.length === 0) {
+        container.innerHTML = `<p class="keywords__empty">No keyword data yet</p>`;
+        return;
+      }
+
+      const rows = queries
+        .slice(0, 10)
+        .map(
+          (q) => `
+          <tr>
+            <td class="keywords__query">${q.query}</td>
+            <td class="keywords__num">${q.position}</td>
+            <td class="keywords__num">${q.impressions.toLocaleString()}</td>
+            <td class="keywords__num">${q.clicks}</td>
+            <td class="keywords__num">${q.ctr}%</td>
+          </tr>`,
+        )
+        .join("");
+
+      container.innerHTML = `
+        <details class="keywords__details">
+          <summary class="keywords__summary">Top Keywords (${queries.length})</summary>
+          <table class="keywords__table">
+            <thead>
+              <tr>
+                <th>Query</th>
+                <th>Pos</th>
+                <th>Impr</th>
+                <th>Clicks</th>
+                <th>CTR</th>
+              </tr>
+            </thead>
+            <tbody>${rows}</tbody>
+          </table>
+        </details>
+      `;
     });
   }
 
@@ -486,12 +553,15 @@
 
   async function initializeApp() {
     const automatedPayload = await loadAutomatedData();
+    const keywords = await loadKeywordData();
+    keywordData = keywords;
     setDate(automatedPayload.generatedAt);
     const localData = loadData();
     const automatedData = automatedPayload.mapped;
     const data = { ...localData, ...automatedData };
     currentData = data;
     renderCards(data);
+    renderKeywords(keywords);
     updateSummary(data);
 
     // Search and filter controls

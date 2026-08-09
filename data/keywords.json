@@ -1,0 +1,498 @@
+{
+  "generatedAt": "2026-08-09T18:24:58.614Z",
+  "range": {
+    "startDate": "2026-07-10",
+    "endDate": "2026-08-08"
+  },
+  "assets": {
+    "asset-1": [
+      {
+        "query": "css clamp generator",
+        "clicks": 2,
+        "impressions": 15,
+        "ctr": 13.3,
+        "position": 28.2
+      },
+      {
+        "query": "clamp generator",
+        "clicks": 1,
+        "impressions": 13,
+        "ctr": 7.7,
+        "position": 34.3
+      },
+      {
+        "query": "clamp calculator",
+        "clicks": 0,
+        "impressions": 9,
+        "ctr": 0,
+        "position": 60.1
+      },
+      {
+        "query": "clamp css",
+        "clicks": 0,
+        "impressions": 24,
+        "ctr": 0,
+        "position": 57.8
+      },
+      {
+        "query": "clamp css calculator",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 41
+      },
+      {
+        "query": "clamp css property",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 44
+      },
+      {
+        "query": "clamp font",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 52
+      },
+      {
+        "query": "clamp font size app",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 50
+      },
+      {
+        "query": "clamp formula",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 48
+      },
+      {
+        "query": "clamp generator css",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 8
+      },
+      {
+        "query": "clamp width",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 55
+      },
+      {
+        "query": "clamp width css",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 46
+      },
+      {
+        "query": "clampgenerator",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 8
+      },
+      {
+        "query": "css clamp",
+        "clicks": 0,
+        "impressions": 29,
+        "ctr": 0,
+        "position": 53.8
+      },
+      {
+        "query": "css clamp calculator",
+        "clicks": 0,
+        "impressions": 9,
+        "ctr": 0,
+        "position": 50.6
+      },
+      {
+        "query": "css clamp example",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 48
+      },
+      {
+        "query": "css clamp property",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 35
+      },
+      {
+        "query": "css clampblog",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 70
+      },
+      {
+        "query": "css clamps",
+        "clicks": 0,
+        "impressions": 5,
+        "ctr": 0,
+        "position": 53.4
+      },
+      {
+        "query": "css what is clamp",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 48
+      },
+      {
+        "query": "font clamp generator",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 36
+      },
+      {
+        "query": "font size clamp",
+        "clicks": 0,
+        "impressions": 5,
+        "ctr": 0,
+        "position": 90.6
+      },
+      {
+        "query": "font-size: clamp",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 80
+      },
+      {
+        "query": "html clamp",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 36
+      },
+      {
+        "query": "what is clamp in css",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 85
+      }
+    ],
+    "asset-2": [
+      {
+        "query": "freelance pay calculator",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 61
+      },
+      {
+        "query": "freelance wage calculator",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 70
+      },
+      {
+        "query": "self employed hourly rate calculator",
+        "clicks": 0,
+        "impressions": 8,
+        "ctr": 0,
+        "position": 44.5
+      }
+    ],
+    "asset-3": [
+      {
+        "query": "katch mcardle calculator",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 78
+      },
+      {
+        "query": "macro ca",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 78
+      },
+      {
+        "query": "macro cal",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 59
+      },
+      {
+        "query": "macrocal",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 8
+      }
+    ],
+    "asset-4": [
+      {
+        "query": "1 rep max exrx",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 80
+      },
+      {
+        "query": "1 rpm",
+        "clicks": 0,
+        "impressions": 6,
+        "ctr": 0,
+        "position": 92.7
+      },
+      {
+        "query": "1repmax",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 3
+      },
+      {
+        "query": "1rm calculator exrx",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 82
+      },
+      {
+        "query": "1rp",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 73
+      },
+      {
+        "query": "1rpm",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 83.5
+      },
+      {
+        "query": "exrx 1 rep max",
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0,
+        "position": 79
+      },
+      {
+        "query": "exrx one rep",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 80
+      },
+      {
+        "query": "exrx one rep max",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 89.5
+      },
+      {
+        "query": "exrx one rep max calculator",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 82
+      },
+      {
+        "query": "how to find one rep max",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 93
+      },
+      {
+        "query": "i-rep",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 33
+      },
+      {
+        "query": "max pr",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0,
+        "position": 46.3
+      },
+      {
+        "query": "max repa",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 37.5
+      },
+      {
+        "query": "nasm one rep max",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 84.5
+      },
+      {
+        "query": "on your max",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 35
+      },
+      {
+        "query": "one rep",
+        "clicks": 0,
+        "impressions": 14,
+        "ctr": 0,
+        "position": 49
+      },
+      {
+        "query": "one rep max",
+        "clicks": 0,
+        "impressions": 4,
+        "ctr": 0,
+        "position": 77
+      },
+      {
+        "query": "one rep max calculator exrx",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 83
+      },
+      {
+        "query": "one rep max exrx",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 82
+      },
+      {
+        "query": "one rep max fitness hub",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 49
+      },
+      {
+        "query": "one rep max normative data",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 91
+      },
+      {
+        "query": "one rep max predictor",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 95
+      },
+      {
+        "query": "onerep",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 50
+      },
+      {
+        "query": "onerep calculator",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 63
+      }
+    ],
+    "asset-5": [
+      {
+        "query": "src set",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 41
+      }
+    ],
+    "asset-6": [
+      {
+        "query": "css flex grid generator",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 66
+      },
+      {
+        "query": "css flexbox layout generator",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 96
+      },
+      {
+        "query": "css layout builder",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 78
+      },
+      {
+        "query": "css layout creator",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 69.5
+      },
+      {
+        "query": "css subgrid generator",
+        "clicks": 0,
+        "impressions": 5,
+        "ctr": 0,
+        "position": 10.8
+      },
+      {
+        "query": "flex grid generator",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0,
+        "position": 60.7
+      },
+      {
+        "query": "flexbox grid generator",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 58.5
+      },
+      {
+        "query": "responsive css layout generator",
+        "clicks": 0,
+        "impressions": 3,
+        "ctr": 0,
+        "position": 66.3
+      },
+      {
+        "query": "responsive grid css generator",
+        "clicks": 0,
+        "impressions": 1,
+        "ctr": 0,
+        "position": 79
+      },
+      {
+        "query": "responsive grid generator",
+        "clicks": 0,
+        "impressions": 2,
+        "ctr": 0,
+        "position": 80.5
+      }
+    ],
+    "asset-7": []
+  }
+}
