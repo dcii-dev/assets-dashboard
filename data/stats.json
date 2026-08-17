@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-08-16T09:40:09.848Z",
+  "generatedAt": "2026-08-17T09:56:12.152Z",
   "range": {
-    "startDate": "2026-07-17",
-    "endDate": "2026-08-15"
+    "startDate": "2026-07-18",
+    "endDate": "2026-08-16"
   },
   "assets": {
     "asset-1": {
       "domain": "clampgen.com",
       "gaPropertyId": "540522281",
-      "sessions": 489,
-      "clicks": 7,
-      "impressions": 355,
+      "sessions": 503,
+      "clicks": 8,
+      "impressions": 365,
       "status": "ok",
       "error": ""
     },
@@ -19,32 +19,32 @@
       "gaPropertyId": "540671739",
       "sessions": 15,
       "clicks": 0,
-      "impressions": 16,
+      "impressions": 15,
       "status": "ok",
       "error": ""
     },
     "asset-3": {
       "domain": "calmacrocal.com",
       "gaPropertyId": "540909051",
-      "sessions": 18,
+      "sessions": 24,
       "clicks": 0,
-      "impressions": 9,
+      "impressions": 10,
       "status": "ok",
       "error": ""
     },
     "asset-4": {
       "domain": "onerepmaxx.com",
       "gaPropertyId": "541123516",
-      "sessions": 28,
+      "sessions": 31,
       "clicks": 0,
-      "impressions": 113,
+      "impressions": 108,
       "status": "ok",
       "error": ""
     },
     "asset-5": {
       "domain": "srcsetbuilder.com",
       "gaPropertyId": "542208158",
-      "sessions": 12,
+      "sessions": 10,
       "clicks": 0,
       "impressions": 13,
       "status": "ok",
@@ -53,18 +53,18 @@
     "asset-6": {
       "domain": "csslayoutgen.com",
       "gaPropertyId": "544297629",
-      "sessions": 34,
+      "sessions": 32,
       "clicks": 0,
-      "impressions": 73,
+      "impressions": 74,
       "status": "ok",
       "error": ""
     },
     "asset-7": {
       "domain": "boxshadowgen.com",
       "gaPropertyId": "545267670",
-      "sessions": 92,
+      "sessions": 89,
       "clicks": 1,
-      "impressions": 13,
+      "impressions": 14,
       "status": "ok",
       "error": ""
     }
