@@ -1,50 +1,50 @@
 {
-  "generatedAt": "2026-08-17T09:56:12.152Z",
+  "generatedAt": "2026-08-18T09:47:33.055Z",
   "range": {
-    "startDate": "2026-07-18",
-    "endDate": "2026-08-16"
+    "startDate": "2026-07-19",
+    "endDate": "2026-08-17"
   },
   "assets": {
     "asset-1": {
       "domain": "clampgen.com",
       "gaPropertyId": "540522281",
-      "sessions": 503,
-      "clicks": 8,
-      "impressions": 365,
+      "sessions": 519,
+      "clicks": 9,
+      "impressions": 382,
       "status": "ok",
       "error": ""
     },
     "asset-2": {
       "domain": "freelanceratewise.com",
       "gaPropertyId": "540671739",
-      "sessions": 15,
+      "sessions": 16,
       "clicks": 0,
-      "impressions": 15,
+      "impressions": 14,
       "status": "ok",
       "error": ""
     },
     "asset-3": {
       "domain": "calmacrocal.com",
       "gaPropertyId": "540909051",
-      "sessions": 24,
+      "sessions": 25,
       "clicks": 0,
-      "impressions": 10,
+      "impressions": 9,
       "status": "ok",
       "error": ""
     },
     "asset-4": {
       "domain": "onerepmaxx.com",
       "gaPropertyId": "541123516",
-      "sessions": 31,
+      "sessions": 33,
       "clicks": 0,
-      "impressions": 108,
+      "impressions": 114,
       "status": "ok",
       "error": ""
     },
     "asset-5": {
       "domain": "srcsetbuilder.com",
       "gaPropertyId": "542208158",
-      "sessions": 10,
+      "sessions": 11,
       "clicks": 0,
       "impressions": 13,
       "status": "ok",
@@ -53,18 +53,18 @@
     "asset-6": {
       "domain": "csslayoutgen.com",
       "gaPropertyId": "544297629",
-      "sessions": 32,
+      "sessions": 36,
       "clicks": 0,
-      "impressions": 74,
+      "impressions": 81,
       "status": "ok",
       "error": ""
     },
     "asset-7": {
       "domain": "boxshadowgen.com",
       "gaPropertyId": "545267670",
-      "sessions": 89,
+      "sessions": 86,
       "clicks": 1,
-      "impressions": 14,
+      "impressions": 23,
       "status": "ok",
       "error": ""
     }
