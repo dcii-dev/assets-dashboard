@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-08-29T09:22:44.090Z",
+  "generatedAt": "2026-08-30T09:24:21.989Z",
   "range": {
-    "startDate": "2026-07-30",
-    "endDate": "2026-08-28"
+    "startDate": "2026-07-31",
+    "endDate": "2026-08-29"
   },
   "assets": {
     "asset-1": {
       "domain": "clampgen.com",
       "gaPropertyId": "540522281",
-      "sessions": 486,
-      "clicks": 14,
-      "impressions": 578,
+      "sessions": 472,
+      "clicks": 15,
+      "impressions": 595,
       "status": "ok",
       "error": ""
     },
@@ -28,7 +28,7 @@
       "gaPropertyId": "540909051",
       "sessions": 24,
       "clicks": 0,
-      "impressions": 26,
+      "impressions": 30,
       "status": "ok",
       "error": ""
     },
@@ -37,7 +37,7 @@
       "gaPropertyId": "541123516",
       "sessions": 39,
       "clicks": 0,
-      "impressions": 109,
+      "impressions": 111,
       "status": "ok",
       "error": ""
     },
@@ -55,16 +55,16 @@
       "gaPropertyId": "544297629",
       "sessions": 40,
       "clicks": 4,
-      "impressions": 141,
+      "impressions": 147,
       "status": "ok",
       "error": ""
     },
     "asset-7": {
       "domain": "boxshadowgen.com",
       "gaPropertyId": "545267670",
-      "sessions": 45,
+      "sessions": 42,
       "clicks": 0,
-      "impressions": 24,
+      "impressions": 23,
       "status": "ok",
       "error": ""
     }
