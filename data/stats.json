@@ -1,34 +1,34 @@
 {
-  "generatedAt": "2026-09-02T13:38:07.009Z",
+  "generatedAt": "2026-09-03T13:34:25.176Z",
   "range": {
-    "startDate": "2026-08-03",
-    "endDate": "2026-09-01"
+    "startDate": "2026-08-04",
+    "endDate": "2026-09-02"
   },
   "assets": {
     "asset-1": {
       "domain": "clampgen.com",
       "gaPropertyId": "540522281",
-      "sessions": 495,
-      "clicks": 16,
-      "impressions": 674,
+      "sessions": 505,
+      "clicks": 19,
+      "impressions": 732,
       "status": "ok",
       "error": ""
     },
     "asset-2": {
       "domain": "freelanceratewise.com",
       "gaPropertyId": "540671739",
-      "sessions": 16,
+      "sessions": 10,
       "clicks": 0,
-      "impressions": 13,
+      "impressions": 21,
       "status": "ok",
       "error": ""
     },
     "asset-3": {
       "domain": "calmacrocal.com",
       "gaPropertyId": "540909051",
-      "sessions": 23,
+      "sessions": 24,
       "clicks": 0,
-      "impressions": 34,
+      "impressions": 35,
       "status": "ok",
       "error": ""
     },
@@ -37,7 +37,7 @@
       "gaPropertyId": "541123516",
       "sessions": 43,
       "clicks": 0,
-      "impressions": 106,
+      "impressions": 105,
       "status": "ok",
       "error": ""
     },
@@ -46,7 +46,7 @@
       "gaPropertyId": "542208158",
       "sessions": 8,
       "clicks": 0,
-      "impressions": 21,
+      "impressions": 23,
       "status": "ok",
       "error": ""
     },
@@ -55,14 +55,14 @@
       "gaPropertyId": "544297629",
       "sessions": 29,
       "clicks": 4,
-      "impressions": 201,
+      "impressions": 209,
       "status": "ok",
       "error": ""
     },
     "asset-7": {
       "domain": "boxshadowgen.com",
       "gaPropertyId": "545267670",
-      "sessions": 42,
+      "sessions": 40,
       "clicks": 0,
       "impressions": 24,
       "status": "ok",
