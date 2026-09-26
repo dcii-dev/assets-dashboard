@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-09-25T09:29:24.370Z",
+  "generatedAt": "2026-09-26T09:25:36.833Z",
   "range": {
-    "startDate": "2026-08-26",
-    "endDate": "2026-09-24"
+    "startDate": "2026-08-27",
+    "endDate": "2026-09-25"
   },
   "assets": {
     "asset-1": {
       "domain": "clampgen.com",
       "gaPropertyId": "540522281",
-      "sessions": 483,
-      "clicks": 32,
-      "impressions": 874,
+      "sessions": 480,
+      "clicks": 31,
+      "impressions": 879,
       "status": "ok",
       "error": ""
     },
@@ -26,9 +26,9 @@
     "asset-3": {
       "domain": "calmacrocal.com",
       "gaPropertyId": "540909051",
-      "sessions": 16,
+      "sessions": 15,
       "clicks": 0,
-      "impressions": 44,
+      "impressions": 43,
       "status": "ok",
       "error": ""
     },
@@ -46,25 +46,25 @@
       "gaPropertyId": "542208158",
       "sessions": 5,
       "clicks": 0,
-      "impressions": 11,
+      "impressions": 10,
       "status": "ok",
       "error": ""
     },
     "asset-6": {
       "domain": "csslayoutgen.com",
       "gaPropertyId": "544297629",
-      "sessions": 17,
+      "sessions": 19,
       "clicks": 0,
-      "impressions": 113,
+      "impressions": 104,
       "status": "ok",
       "error": ""
     },
     "asset-7": {
       "domain": "boxshadowgen.com",
       "gaPropertyId": "545267670",
-      "sessions": 32,
+      "sessions": 30,
       "clicks": 0,
-      "impressions": 6,
+      "impressions": 5,
       "status": "ok",
       "error": ""
     }
