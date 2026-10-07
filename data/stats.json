@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-10-06T09:31:45.222Z",
+  "generatedAt": "2026-10-07T09:32:31.060Z",
   "range": {
-    "startDate": "2026-09-06",
-    "endDate": "2026-10-05"
+    "startDate": "2026-09-07",
+    "endDate": "2026-10-06"
   },
   "assets": {
     "asset-1": {
       "domain": "clampgen.com",
       "gaPropertyId": "540522281",
-      "sessions": 474,
-      "clicks": 39,
-      "impressions": 898,
+      "sessions": 472,
+      "clicks": 38,
+      "impressions": 880,
       "status": "ok",
       "error": ""
     },
@@ -28,7 +28,7 @@
       "gaPropertyId": "540909051",
       "sessions": 18,
       "clicks": 0,
-      "impressions": 35,
+      "impressions": 33,
       "status": "ok",
       "error": ""
     },
@@ -37,14 +37,14 @@
       "gaPropertyId": "541123516",
       "sessions": 25,
       "clicks": 0,
-      "impressions": 46,
+      "impressions": 47,
       "status": "ok",
       "error": ""
     },
     "asset-5": {
       "domain": "srcsetbuilder.com",
       "gaPropertyId": "542208158",
-      "sessions": 1,
+      "sessions": 0,
       "clicks": 0,
       "impressions": 11,
       "status": "ok",
@@ -55,7 +55,7 @@
       "gaPropertyId": "544297629",
       "sessions": 14,
       "clicks": 0,
-      "impressions": 29,
+      "impressions": 28,
       "status": "ok",
       "error": ""
     },
