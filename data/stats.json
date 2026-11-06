@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-11-05T09:20:48.431Z",
+  "generatedAt": "2026-11-06T09:20:06.450Z",
   "range": {
-    "startDate": "2026-10-06",
-    "endDate": "2026-11-04"
+    "startDate": "2026-10-07",
+    "endDate": "2026-11-05"
   },
   "assets": {
     "asset-1": {
       "domain": "clampgen.com",
       "gaPropertyId": "540522281",
-      "sessions": 388,
-      "clicks": 35,
-      "impressions": 828,
+      "sessions": 390,
+      "clicks": 33,
+      "impressions": 789,
       "status": "ok",
       "error": ""
     },
@@ -28,7 +28,7 @@
       "gaPropertyId": "540909051",
       "sessions": 14,
       "clicks": 0,
-      "impressions": 47,
+      "impressions": 46,
       "status": "ok",
       "error": ""
     },
@@ -37,7 +37,7 @@
       "gaPropertyId": "541123516",
       "sessions": 29,
       "clicks": 1,
-      "impressions": 41,
+      "impressions": 40,
       "status": "ok",
       "error": ""
     },
@@ -53,7 +53,7 @@
     "asset-6": {
       "domain": "csslayoutgen.com",
       "gaPropertyId": "544297629",
-      "sessions": 13,
+      "sessions": 12,
       "clicks": 1,
       "impressions": 64,
       "status": "ok",
