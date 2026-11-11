@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-11-10T09:20:16.722Z",
+  "generatedAt": "2026-11-11T09:19:24.599Z",
   "range": {
-    "startDate": "2026-10-11",
-    "endDate": "2026-11-09"
+    "startDate": "2026-10-12",
+    "endDate": "2026-11-10"
   },
   "assets": {
     "asset-1": {
       "domain": "clampgen.com",
       "gaPropertyId": "540522281",
-      "sessions": 369,
-      "clicks": 33,
-      "impressions": 787,
+      "sessions": 380,
+      "clicks": 34,
+      "impressions": 784,
       "status": "ok",
       "error": ""
     },
@@ -19,16 +19,16 @@
       "gaPropertyId": "540671739",
       "sessions": 14,
       "clicks": 0,
-      "impressions": 49,
+      "impressions": 59,
       "status": "ok",
       "error": ""
     },
     "asset-3": {
       "domain": "calmacrocal.com",
       "gaPropertyId": "540909051",
-      "sessions": 16,
+      "sessions": 17,
       "clicks": 0,
-      "impressions": 62,
+      "impressions": 70,
       "status": "ok",
       "error": ""
     },
@@ -37,14 +37,14 @@
       "gaPropertyId": "541123516",
       "sessions": 29,
       "clicks": 1,
-      "impressions": 65,
+      "impressions": 67,
       "status": "ok",
       "error": ""
     },
     "asset-5": {
       "domain": "srcsetbuilder.com",
       "gaPropertyId": "542208158",
-      "sessions": 4,
+      "sessions": 11,
       "clicks": 0,
       "impressions": 2,
       "status": "ok",
@@ -55,7 +55,7 @@
       "gaPropertyId": "544297629",
       "sessions": 13,
       "clicks": 1,
-      "impressions": 61,
+      "impressions": 60,
       "status": "ok",
       "error": ""
     },
