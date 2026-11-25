@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-11-24T09:21:16.410Z",
+  "generatedAt": "2026-11-25T09:21:31.823Z",
   "range": {
-    "startDate": "2026-10-25",
-    "endDate": "2026-11-23"
+    "startDate": "2026-10-26",
+    "endDate": "2026-11-24"
   },
   "assets": {
     "asset-1": {
       "domain": "clampgen.com",
       "gaPropertyId": "540522281",
-      "sessions": 312,
+      "sessions": 311,
       "clicks": 24,
-      "impressions": 684,
+      "impressions": 704,
       "status": "ok",
       "error": ""
     },
@@ -19,25 +19,25 @@
       "gaPropertyId": "540671739",
       "sessions": 13,
       "clicks": 0,
-      "impressions": 196,
+      "impressions": 193,
       "status": "ok",
       "error": ""
     },
     "asset-3": {
       "domain": "calmacrocal.com",
       "gaPropertyId": "540909051",
-      "sessions": 24,
+      "sessions": 25,
       "clicks": 0,
-      "impressions": 93,
+      "impressions": 91,
       "status": "ok",
       "error": ""
     },
     "asset-4": {
       "domain": "onerepmaxx.com",
       "gaPropertyId": "541123516",
-      "sessions": 27,
+      "sessions": 28,
       "clicks": 1,
-      "impressions": 198,
+      "impressions": 217,
       "status": "ok",
       "error": ""
     },
@@ -53,9 +53,9 @@
     "asset-6": {
       "domain": "csslayoutgen.com",
       "gaPropertyId": "544297629",
-      "sessions": 17,
+      "sessions": 19,
       "clicks": 1,
-      "impressions": 56,
+      "impressions": 57,
       "status": "ok",
       "error": ""
     },
